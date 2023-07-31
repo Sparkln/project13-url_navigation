@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>url_navigation</h1>
+        <h1>The name of the student is {{name}}</h1>
+        <h1>The age of the student is {{age}}</h1>
+        <h2>Using for loop</h2>
+        {% for ch in hobbies %}
+            <h1>{{ch}}</h1>
+        {% endfor %}
+
+        <h1>Navigating one html page to another html page by using url mapping names</h1>
+        <h1><a href="{% url 'url_2' %}">Click here to go to url_2 page</a></h1>
+    </center>
+</body>
+</html>
